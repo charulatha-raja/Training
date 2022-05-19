@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.controller.DriverController;
@@ -74,4 +75,11 @@ public  int modifyRating( int id, double updatedRating)
 	return this.repo.modifyRating(id, updatedRating);
 	
 }
+
+public List<Driver> sortedList(String propName)
+{
+	return this.repo.findAll(Sort.by(propName));
+	
+}
+
 }

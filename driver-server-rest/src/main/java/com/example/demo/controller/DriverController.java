@@ -128,6 +128,13 @@ public class DriverController
 		}
 	}
 		
+	@GetMapping(path = "/drivers/sort/{propName}")
+	
+	public List<Driver> sortedList(@PathVariable("propName")String propName)
+	{
+		return this.service.sortedList(propName);
+		
+	}
 	
 	
 }
