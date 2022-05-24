@@ -3,10 +3,9 @@ spring:
     name: cloud-configuration
   config:
     import: configserver:http://localhost:8888
-
-management:
-  endpoints:
+management:             
+  endpoints:  
     web:
       exposure:
         include:
-        - "*"
+        - "*"         
