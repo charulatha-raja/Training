@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: driver-service
+  datasource:  
+    url: jdbc:oracle:thin:@10.90.1.105:1521/DEV
+    username: HR
+    password: HR
+  jpa:
+   properties: 
+     hibernate:
+       formal_sql: true
+   show-sql: true
+   hibernate:
+     ddl-auto: update
+ 
+
+server:
+  port: 2020
+
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      
+management:   
+  endpoints:  
+    web:
+      exposure:
+        include:
+        -  "*"
