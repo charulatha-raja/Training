@@ -10,20 +10,28 @@ public class HealthInsurance extends Insurance
 	}
 
 
-	public HealthInsurance() {
+	public HealthInsurance() 
+	{
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 
 	@Override
+	
 	public double calculatePremium()
+	
 	{
+		
 	double premium =10000;
+	
 	for(String eachItem : preExistingDiseases)
+		
 	{
+		
 	 if(eachItem.equals("BP")|| eachItem.equals("sugar"))
+		 
 	 {
+		 
 		 premium=5000;
 	 }
 	

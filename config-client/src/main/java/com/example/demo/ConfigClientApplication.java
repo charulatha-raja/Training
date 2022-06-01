@@ -28,7 +28,9 @@ public class ConfigClientApplication
 		
 		DriverRepository repo= ctx.getBean(DriverRepository.class);
 		
-		repo.findAll().forEach(System.out::println);;
+		repo.findAll().forEach(System.out::println);
+		
+		
 	}
 
 }

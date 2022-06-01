@@ -13,11 +13,18 @@ public class Application
 	public static void main(String[] args)
 	{
 		VehicleInsurance car = new VehicleInsurance(1010,"ram","car",2019);
+		
 		printPremium(car);
+		
 		LifeInsurance life = new LifeInsurance(1020,"raaam",65);
+		
 		printPremium(life);
+		
+		
 		String[] diseases = {"heartattack","thyroid"};
+		
 		HealthInsurance health = new HealthInsurance(3030,"vijai",diseases);
+		
 		printPremium(health);
 		
 

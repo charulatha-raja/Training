@@ -1,4 +1,4 @@
-package com.training;
+ package com.training;
 
 import com.training.ifaces.CheckCondition;
 import com.training.ifaces.Conditional;
